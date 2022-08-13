@@ -1,0 +1,67 @@
+{
+  "caracteristicas": {
+    "fabricantes": [
+      {
+        "id": 1,
+        "nome": "Nestle"
+      },
+      {
+        "id": 2,
+        "nome": "Perdigão"
+      },
+      {
+        "id": 3,
+        "nome": "Coca Cola"
+      },
+      {
+        "id": 4,
+        "nome": "Trakinas"
+      }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "nome": "Achocolatado"
+      },
+      {
+        "id": 2,
+        "nome": "Zero acucar"
+      },
+      {
+        "id": 3,
+        "nome": "Retornaveis"
+      }
+    ]
+  },
+  "produtos": [],
+  "fabricantesCadastrados": [
+    {
+      "nomeFabricante": "sa",
+      "categoria1": "sa",
+      "categoria2": "sa",
+      "categoria3": "sa",
+      "id": 1
+    },
+    {
+      "nomeFabricante": "sa",
+      "categoria1": "sa",
+      "categoria2": "sa",
+      "categoria3": "sa",
+      "id": 2
+    },
+    {
+      "nomeFabricante": "sa",
+      "categoria1": "sa",
+      "categoria2": "sa",
+      "categoria3": "sa",
+      "id": 3
+    },
+    {
+      "nomeFabricante": "sa",
+      "categoria1": "sa",
+      "categoria2": "sa",
+      "categoria3": "sa",
+      "id": 4
+    }
+  ]
+}
