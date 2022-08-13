@@ -11,14 +11,14 @@
                     <label for="nome">Fabricante</label>
                     <select name="fabricante" id="fabricante" v-model="fabricante">
                         <option value="">Selecione o fabricante</option>
-                         <option v-for="fabricante in fabricantesCadastrados" :key="fabricante.id">{{fabricante.nome}}</option>
+                         <option v-for="fabricante in fabricantes" :key="fabricante.id">{{fabricante.nome}}</option>
                     </select>
                 </div>
                 <div class="input-container">
                     <label for="nome">Categoria</label>
                     <select name="categoria" id="categoria" v-model="categoria">
                         <option value="">Selecione a categoria</option>
-                         <option v-for="fabricante in fabricantesCadastrados" :key="fabricante.id">{{fabricante.nome}}</option>
+                         <option v-for="categoria in categorias" :key="categoria.id">{{categoria.nome}}</option>
                     </select>
                 </div>
                 <div class="input-container">
@@ -67,15 +67,16 @@ export default {
             categoria: null,
             preco: null,
             msg: null,
-            fabricantesCadastrados: null
+            fabricantes: null,
+            categorias: null
         }
     },
     methods: {
         async getCaracteristicas() {
             const req = await fetch("http://localhost:3000/fabricantesCadastrados");
             const data = await req.json();
-            console.log(data.fabricantesCadastrados);
-            this.fabricantesCadastrados = data.fabricantesCadastrados;
+            this.fabricantes = data.fabricantes;
+            this.categorias = data.categorias
         },
         async createProduct(e) {
             e.preventDefault();
