@@ -73,7 +73,7 @@ export default {
     },
     methods: {
         async getCaracteristicas() {
-            const req = await fetch("http://localhost:3000/fabricantesCadastrados");
+            const req = await fetch("http://localhost:3000/caracteristicas");
             const data = await req.json();
             this.fabricantes = data.fabricantes;
             this.categorias = data.categorias
