@@ -84,7 +84,7 @@ export default {
   border-bottom: 3px solid #000;
 }
 
-#produto-table-heading div, .burger-table-row div {
+#produto-table-heading div, .produto-table-row div {
   width: 19%;
 
 }
